@@ -61,5 +61,6 @@
 	<classpathentry kind="lib" path="/Users/chandrimamukherjee/Downloads/classroom week 13/SpringMVCDemo/src/main/webapp/WEB-INF/lib/spring-jms-5.0.2.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/chandrimamukherjee/Downloads/classroom week 13/SpringMVCDemo/src/main/webapp/WEB-INF/lib/spring-jms-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/Users/chandrimamukherjee/Downloads/classroom week 13/SpringMVCDemo/src/main/webapp/WEB-INF/lib/spring-messaging-5.0.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/chandrimamukherjee/Documents/gitrepos/chandrima_Spring_MVCLabSolution/Spring_MVC/src/main/webapp/WEB-INF/lib/spring-beans-5.0.2.RELEASE.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
