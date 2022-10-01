@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.greatLearning.DebateRegistration.entity.Student;
 @Repository
 public class StudentServiceImpl implements StudentsService{
+	@SuppressWarnings("unused")
 	private SessionFactory sessionFactory;
 	
 	//create session
@@ -36,6 +37,7 @@ public class StudentServiceImpl implements StudentsService{
 		
 		//find all the records from db
 		
+		@SuppressWarnings("unchecked")
 		List<Student>students=session.createQuery("from Student").list();
 		tx.commit();
 		
