@@ -7328,3 +7328,423 @@ Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.core.co
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
 	... 72 more
+!SESSION 2022-10-04 13:18:44.261 -----------------------------------------------
+eclipse.buildId=4.24.0.I20220607-0700
+java.version=18.0.1.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/chandrimamukherjee/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/chandrimamukherjee/Documents/gitrepos/chandrima_Spring_MVCLabSolution -product org.eclipse.epp.package.java.product -keyring /Users/chandrimamukherjee/.eclipse_keyring
+
+!ENTRY org.eclipse.emf.ecore 2 0 2022-10-04 13:18:49.827
+!MESSAGE Both 'org.eclipse.bpmn2' and 'org.eclipse.papyrus.infra.core.sashwindows.di' register an extension parser for 'di'
+
+!ENTRY org.eclipse.lsp4e.debug 4 0 2022-10-04 13:18:50.521
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.lsp4e.debug [690]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.14.0,0.15.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.14.0.v20220526-1518"
+       org.eclipse.lsp4j.jsonrpc [232]
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.8.9,2.9.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.debug; bundle-version="[0.14.0,0.15.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.debug; bundle-version="0.14.0.v20220526-1518"
+       org.eclipse.lsp4j.debug [691]
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.8.9,2.9.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="[0.14.0,0.15.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="0.14.0.v20220526-1518"
+       org.eclipse.lsp4j.jsonrpc.debug [692]
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.8.9,2.9.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wildwebdeveloper 4 0 2022-10-04 13:18:50.529
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wildwebdeveloper [705]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.13.5.202205301057"; singleton:="true"
+       org.eclipse.lsp4e.debug [690]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.14.0,0.15.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.14.0.v20220526-1518"
+              org.eclipse.lsp4j.jsonrpc [232]
+                Unresolved requirement: Import-Package: com.google.gson; version="[2.8.9,2.9.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.14.0.v20220526-1518"
+       org.eclipse.lsp4j [231]
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.8.9,2.9.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.14.0.v20220526-1518"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.gef.dot.ide 4 0 2022-10-04 13:18:51.598
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.gef.dot.ide [1666]
+  Unresolved requirement: Require-Bundle: org.eclipse.gef.dot; bundle-version="[5.0.0,6.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef.dot; bundle-version="5.1.3.202206070201"; singleton:="true"
+       org.eclipse.gef.dot [1663]
+         Unresolved requirement: Require-Bundle: org.eclipse.gef.dot.generator; bundle-version="[5.0.0,6.0.0)"; resolution:="optional"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gef.dot [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.202206070201"; osgi.identity="org.eclipse.gef.dot"; singleton:="true"] because it is exposed to package 'com.google.inject' from resources com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.v20210324-2015"; osgi.identity="com.google.inject"] and com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.v201605172100"; osgi.identity="com.google.inject"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gef.dot [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.202206070201"; osgi.identity="org.eclipse.gef.dot"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.17.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.v20210324-2015"; osgi.identity="com.google.inject"]
+
+Chain 2:
+  org.eclipse.gef.dot [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.202206070201"; osgi.identity="org.eclipse.gef.dot"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gef.common)(&(bundle-version>=5.0.0)(!(bundle-version>=6.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="5.0.1.202206070201"; osgi.wiring.bundle="org.eclipse.gef.common"
+  org.eclipse.gef.common [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.202206070201"; osgi.identity="org.eclipse.gef.common"]
+    import: (&(osgi.wiring.package=com.google.inject)(&(version>=1.3.0)(!(version>=1.4.0))))
+     |
+    export: osgi.wiring.package: com.google.inject
+  com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.v201605172100"; osgi.identity="com.google.inject"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.gef.dot.ui 4 0 2022-10-04 13:18:51.741
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.gef.dot.ui [1667]
+  Unresolved requirement: Require-Bundle: org.eclipse.gef.dot.ide; bundle-version="[5.0.0,6.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef.dot.ide; bundle-version="5.1.3.202206070201"; singleton:="true"
+       org.eclipse.gef.dot.ide [1666]
+         Unresolved requirement: Require-Bundle: org.eclipse.gef.dot; bundle-version="[5.0.0,6.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gef.dot; bundle-version="5.1.3.202206070201"; singleton:="true"
+              org.eclipse.gef.dot [1663]
+                Unresolved requirement: Require-Bundle: org.eclipse.gef.dot.generator; bundle-version="[5.0.0,6.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.gef.dot; bundle-version="[5.0.0,6.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef.dot; bundle-version="5.1.3.202206070201"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.gef.dot.ui [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.202206070201"; osgi.identity="org.eclipse.gef.dot.ui"; singleton:="true"] because it is exposed to package 'com.google.inject' from resources com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.v20210324-2015"; osgi.identity="com.google.inject"] and com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.v201605172100"; osgi.identity="com.google.inject"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.gef.dot.ui [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.202206070201"; osgi.identity="org.eclipse.gef.dot.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext.ui)(&(bundle-version>=2.17.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext.ui
+  com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.v20210324-2015"; osgi.identity="com.google.inject"]
+
+Chain 2:
+  org.eclipse.gef.dot.ui [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.202206070201"; osgi.identity="org.eclipse.gef.dot.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gef.common)(&(bundle-version>=5.0.0)(!(bundle-version>=6.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="5.0.1.202206070201"; osgi.wiring.bundle="org.eclipse.gef.common"
+  org.eclipse.gef.common [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.202206070201"; osgi.identity="org.eclipse.gef.common"]
+    import: (&(osgi.wiring.package=com.google.inject)(&(version>=1.3.0)(!(version>=1.4.0))))
+     |
+    export: osgi.wiring.package: com.google.inject
+  com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.v201605172100"; osgi.identity="com.google.inject"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.viatra.query.tooling.localsearch.ui 4 0 2022-10-04 13:18:52.172
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.viatra.query.tooling.localsearch.ui [3083]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.viatra.query.tooling.localsearch.ui [osgi.identity; type="osgi.bundle"; version:Version="0.27.0.202203091511"; osgi.identity="org.eclipse.viatra.query.tooling.localsearch.ui"; singleton:="true"] because it is exposed to package 'com.google.inject' from resources com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.v20210324-2015"; osgi.identity="com.google.inject"] and com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.v201605172100"; osgi.identity="com.google.inject"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.viatra.query.tooling.localsearch.ui [osgi.identity; type="osgi.bundle"; version:Version="0.27.0.202203091511"; osgi.identity="org.eclipse.viatra.query.tooling.localsearch.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.google.inject)(bundle-version>=3.0.0))
+     |
+    provide: osgi.wiring.bundle: com.google.inject
+  com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.v20210324-2015"; osgi.identity="com.google.inject"]
+
+Chain 2:
+  org.eclipse.viatra.query.tooling.localsearch.ui [osgi.identity; type="osgi.bundle"; version:Version="0.27.0.202203091511"; osgi.identity="org.eclipse.viatra.query.tooling.localsearch.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.viatra.integration.zest)(&(bundle-version>=2.7.0)(!(bundle-version>=2.8.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.7.0.202203091511"; osgi.wiring.bundle="org.eclipse.viatra.integration.zest"; singleton:="true"
+  org.eclipse.viatra.integration.zest [osgi.identity; type="osgi.bundle"; version:Version="2.7.0.202203091511"; osgi.identity="org.eclipse.viatra.integration.zest"; singleton:="true"]
+    import: (&(osgi.wiring.package=com.google.inject)(version>=1.3.0))
+     |
+    export: osgi.wiring.package: com.google.inject
+  com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.v201605172100"; osgi.identity="com.google.inject"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.viatra.query.tooling.ui.retevis 4 0 2022-10-04 13:18:52.278
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.viatra.query.tooling.ui.retevis [3085]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.viatra.query.tooling.ui.retevis [osgi.identity; type="osgi.bundle"; version:Version="0.27.0.202203091511"; osgi.identity="org.eclipse.viatra.query.tooling.ui.retevis"; singleton:="true"] because it is exposed to package 'com.google.inject' from resources com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.v20210324-2015"; osgi.identity="com.google.inject"] and com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.v201605172100"; osgi.identity="com.google.inject"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.viatra.query.tooling.ui.retevis [osgi.identity; type="osgi.bundle"; version:Version="0.27.0.202203091511"; osgi.identity="org.eclipse.viatra.query.tooling.ui.retevis"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.google.inject)(bundle-version>=3.0.0))
+     |
+    provide: osgi.wiring.bundle: com.google.inject
+  com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="5.0.1.v20210324-2015"; osgi.identity="com.google.inject"]
+
+Chain 2:
+  org.eclipse.viatra.query.tooling.ui.retevis [osgi.identity; type="osgi.bundle"; version:Version="0.27.0.202203091511"; osgi.identity="org.eclipse.viatra.query.tooling.ui.retevis"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gef.zest.fx)(bundle-version>=5.0.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="5.1.2.202206070201"; osgi.wiring.bundle="org.eclipse.gef.zest.fx"
+  org.eclipse.gef.zest.fx [osgi.identity; type="osgi.bundle"; version:Version="5.1.2.202206070201"; osgi.identity="org.eclipse.gef.zest.fx"]
+    import: (&(osgi.wiring.package=com.google.inject)(&(version>=1.3.0)(!(version>=1.4.0))))
+     |
+    export: osgi.wiring.package: com.google.inject
+  com.google.inject [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.v201605172100"; osgi.identity="com.google.inject"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1847)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1840)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1781)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1745)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1667)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-10-04 13:18:58.699
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-04 13:18:58.700
+!MESSAGE A conflict occurred for ALT+CTRL+P:
+Binding(ALT+CTRL+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.profiles.ui.commands.selectMavenProfileCommand,Select Maven Profiles,
+		,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b27b44d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+P,
+	ParameterizedCommand(Command(org.eclipse.linuxtools.changelog.core.preparechangelog,Prepare Changelog,
+		Prepares Changelog,
+		Category(org.eclipse.linuxtools.changelog,Changelog,Changelog key bindings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74ff439e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-04 13:18:58.700
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4eb45bfd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c56ca37,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-04 13:18:58.700
+!MESSAGE A conflict occurred for ALT+SHIFT+X S:
+Binding(ALT+SHIFT+X S,
+	ParameterizedCommand(Command(org.eclipse.reddeer.eclipse.ui.junitShortcut.run,RedDeer Test,
+		RedDeer Test,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a45802c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X S,
+	ParameterizedCommand(Command(org.eclipse.swtbot.eclipse.ui.junitShortcut.run,SWTBot Test,
+		SWTBot Test,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a8d149,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-04 13:18:58.700
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@682f0992,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@420261d2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-04 13:18:58.700
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6460dd5e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26007a02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-04 13:18:58.700
+!MESSAGE A conflict occurred for COMMAND+L:
+Binding(COMMAND+L,
+	ParameterizedCommand(Command(org.eclipse.ecf.discovery.ui.userinput.commands.manualLookupCommand,Lookup Service,
+		,
+		Category(org.eclipse.ecf.discovery.ui.userinput.commands.category,Discovery Category,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@36f394c9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+L,
+	ParameterizedCommand(Command(org.eclipse.papyrus.infra.gmfdiag.hyperlink.commands.hyperlinkManagerCommand,Modify hyperlinks,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@672e6f34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+L,
+	ParameterizedCommand(Command(org.eclipse.rcptt.ui.actions.goto.line,Goto Line,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@546d4a2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-04 13:18:58.700
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20336e62,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@accf371,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-04 13:18:58.700
+!MESSAGE A conflict occurred for ALT+SHIFT+D S:
+Binding(ALT+SHIFT+D S,
+	ParameterizedCommand(Command(org.eclipse.reddeer.eclipse.ui.junitShortcut.debug,RedDeer Test,
+		RedDeer Test,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e0f6ad3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D S,
+	ParameterizedCommand(Command(org.eclipse.swtbot.eclipse.ui.junitShortcut.debug,SWTBot Test,
+		SWTBot Test,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2ddf5e74,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2022-10-04 13:22:40.288
+!MESSAGE Invalid property category path: org.eclipse.rcptt.ui.views.IntegrationsPropertiesPage (bundle: org.eclipse.rcptt.zephyr.ui, propertyPage: org.eclipse.rcptt.zephyr.ZephyrPropertiesPage)
+
+!ENTRY org.eclipse.debug.ui 4 0 2022-10-04 13:28:08.117
+!MESSAGE Tab group extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup for type org.eclipse.cdt.launch.applicationLaunchType for the [profile] mode has been replaced by extension: org.eclipse.cdt.launch.applicationProfileLaunchTabGroup
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2022-10-04 13:30:49.154
+!MESSAGE Error while getting URI 'platform:/plugin/org.eclipse.persistence.moxy/org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd' from plugin 'org.eclipse.jpt.common.eclipselink.core' : /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+!STACK 0
+java.io.FileNotFoundException: /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:115)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:240)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:37)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:263)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.createURI(XMLCatalogs.java:139)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:87)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:65)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:52)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceConstants.storePreferencesToLemminxOptions(XMLPreferenceConstants.java:90)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:169)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:164)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:241)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)

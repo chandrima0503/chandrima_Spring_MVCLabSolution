@@ -32,7 +32,7 @@
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/studentDebate"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="viyom@0712"></property>
+		<property name="password" value="chandrima"></property>
 	</bean>
 
 	<bean id="sessionFactory"
