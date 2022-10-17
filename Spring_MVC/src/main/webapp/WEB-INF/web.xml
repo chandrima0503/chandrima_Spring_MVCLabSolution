@@ -22,6 +22,7 @@
 	</servlet>
 
 	<!-- Set up URL mapping for Spring MVC Dispatcher Servlet -->
+	
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>

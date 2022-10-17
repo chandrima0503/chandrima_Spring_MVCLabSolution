@@ -12,8 +12,8 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<!-- Add support for component scanning -->
-	<context:component-scan
-		base-package="com.greatLearning.DebateRegistration" />
+	<context:annotation-config />
+	<context:component-scan base-package="com.greatLearning.DebateRegistration" />
 
 
 
@@ -28,7 +28,7 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 		id="dataSource">
 		<property name="driverClassName"
-			value="com.mysql.cj.jdbc.Driver"></property>
+			value="com.mysql.jdbc.Driver"></property>
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/studentDebate"></property>
 		<property name="username" value="root"></property>
